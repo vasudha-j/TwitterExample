@@ -23,7 +23,7 @@ class WordCell : UICollectionViewCell{
     // called when cell is dequeued
     override init(frame: CGRect) {
         super.init(frame: frame)
-       backgroundColor = .yellow
+       //backgroundColor = .yellow
         setUpViews()
     }
     //MARK: -SetUpViews

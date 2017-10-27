@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		167644FFDCCE77A6F3F95834 /* Pods_TwitterExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 527D461608979E0911DC05EA /* Pods_TwitterExample.framework */; };
+		215B4B7D1FA3A07400793A35 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215B4B7C1FA3A07400793A35 /* User.swift */; };
+		215B4B7F1FA3A3CE00793A35 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215B4B7E1FA3A3CE00793A35 /* UserCell.swift */; };
 		21BB61DC1FA260F600971B49 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BB61DB1FA260F600971B49 /* AppDelegate.swift */; };
 		21BB61E31FA260F600971B49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21BB61E21FA260F600971B49 /* Assets.xcassets */; };
 		21BB61E61FA260F600971B49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21BB61E41FA260F600971B49 /* LaunchScreen.storyboard */; };
@@ -15,8 +17,9 @@
 		21BB61FC1FA260F600971B49 /* TwitterExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BB61FB1FA260F600971B49 /* TwitterExampleUITests.swift */; };
 		21BB620A1FA2620000971B49 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BB62091FA2620000971B49 /* HomeController.swift */; };
 		21BB620E1FA2749000971B49 /* HomeDataSourceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BB620D1FA2749000971B49 /* HomeDataSourceController.swift */; };
-		21BB62131FA2802700971B49 /* Cells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BB62121FA2802700971B49 /* Cells.swift */; };
+		21BB62131FA2802700971B49 /* UserCellHeaderAndFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BB62121FA2802700971B49 /* UserCellHeaderAndFooter.swift */; };
 		21BB62151FA2805100971B49 /* HomeDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BB62141FA2805100971B49 /* HomeDataSource.swift */; };
+		21D4259D1FA3B1FB002B99AE /* HomeDataSourceController+CustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D4259C1FA3B1FB002B99AE /* HomeDataSourceController+CustomNavigationBar.swift */; };
 		65EA9656172C54E29286F376 /* Pods_TwitterExampleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 423A649DE135E1C4C7A74298 /* Pods_TwitterExampleUITests.framework */; };
 		A7AA4656B366D21B147C9D0A /* Pods_TwitterExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9552537F9D502E947AE44498 /* Pods_TwitterExampleTests.framework */; };
 /* End PBXBuildFile section */
@@ -40,6 +43,8 @@
 
 /* Begin PBXFileReference section */
 		1E58CC5989545E4AD3261721 /* Pods-TwitterExampleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwitterExampleUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TwitterExampleUITests/Pods-TwitterExampleUITests.release.xcconfig"; sourceTree = "<group>"; };
+		215B4B7C1FA3A07400793A35 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		215B4B7E1FA3A3CE00793A35 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		21BB61D81FA260F600971B49 /* TwitterExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitterExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		21BB61DB1FA260F600971B49 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		21BB61E21FA260F600971B49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -53,8 +58,9 @@
 		21BB61FD1FA260F600971B49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		21BB62091FA2620000971B49 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		21BB620D1FA2749000971B49 /* HomeDataSourceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDataSourceController.swift; sourceTree = "<group>"; };
-		21BB62121FA2802700971B49 /* Cells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cells.swift; sourceTree = "<group>"; };
+		21BB62121FA2802700971B49 /* UserCellHeaderAndFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCellHeaderAndFooter.swift; sourceTree = "<group>"; };
 		21BB62141FA2805100971B49 /* HomeDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDataSource.swift; sourceTree = "<group>"; };
+		21D4259C1FA3B1FB002B99AE /* HomeDataSourceController+CustomNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeDataSourceController+CustomNavigationBar.swift"; sourceTree = "<group>"; };
 		319A041A43CC4D6584719458 /* Pods-TwitterExampleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwitterExampleUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TwitterExampleUITests/Pods-TwitterExampleUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		423A649DE135E1C4C7A74298 /* Pods_TwitterExampleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TwitterExampleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		527D461608979E0911DC05EA /* Pods_TwitterExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TwitterExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -152,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				21BB62141FA2805100971B49 /* HomeDataSource.swift */,
+				215B4B7C1FA3A07400793A35 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -159,7 +166,8 @@
 		21BB62101FA27F9700971B49 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				21BB62121FA2802700971B49 /* Cells.swift */,
+				21BB62121FA2802700971B49 /* UserCellHeaderAndFooter.swift */,
+				215B4B7E1FA3A3CE00793A35 /* UserCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -168,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				21BB620D1FA2749000971B49 /* HomeDataSourceController.swift */,
+				21D4259C1FA3B1FB002B99AE /* HomeDataSourceController+CustomNavigationBar.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -487,11 +496,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21D4259D1FA3B1FB002B99AE /* HomeDataSourceController+CustomNavigationBar.swift in Sources */,
 				21BB62151FA2805100971B49 /* HomeDataSource.swift in Sources */,
 				21BB620E1FA2749000971B49 /* HomeDataSourceController.swift in Sources */,
-				21BB62131FA2802700971B49 /* Cells.swift in Sources */,
+				215B4B7D1FA3A07400793A35 /* User.swift in Sources */,
+				21BB62131FA2802700971B49 /* UserCellHeaderAndFooter.swift in Sources */,
 				21BB61DC1FA260F600971B49 /* AppDelegate.swift in Sources */,
 				21BB620A1FA2620000971B49 /* HomeController.swift in Sources */,
+				215B4B7F1FA3A3CE00793A35 /* UserCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

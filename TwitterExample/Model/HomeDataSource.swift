@@ -9,15 +9,25 @@
 import LBTAComponents
 class HomeDataSouce : Datasource{
     
-    let words = ["Hello","Hi","Yourself"]
+    let users : [User] = {
+        var user1 = User(name: "Test1", userName: "Test2", bioText: "test tes test", profileImage: #imageLiteral(resourceName: "twitter_profile"))
+        var user2 = User(name: "Test1", userName: "Test2", bioText: "qeuewydfgeghegthghsdfvshjdgfuyesgtuebfhjbdfhjgertguertiueriuferhfgbhjrergrtueyuihdhjbcvbdvbjhdsgfshfiuwerjelkfjklefgkegtiueyrtioeurioejjertjhregkjrg", profileImage: #imageLiteral(resourceName: "twitter_profile"))
+        var user3 = User(name: "Test1", userName: "Test2", bioText: "qeuewydfgeghegthghsdfvshjdgfuyesgtuebfhjbdfhjgertguertiueriuferhfgbhjrergrtueyuihdhjbcvbdvbjhdsgfshfiuwerjelkfjklefgkegtiueyrtioeurioejjertjhregkjrg", profileImage: #imageLiteral(resourceName: "twitter_profile"))
+        var user4 = User(name: "Test1", userName: "Test2", bioText:"qeuewydfgeghegthghsdfvshjdgfuyesgtuebfhjbdfhjgertguertiueriuferhfgbhjrergrtueyuihdhjbcvbdvbjhdsgfshfiuwerjelkfjklefgkegtiueyrtioeurioejjertjhregkjrg", profileImage: #imageLiteral(resourceName: "twitter_profile"))
+        var user5 = User(name: "Test1", userName: "Test2", bioText: "qeuewydfgeghegthghsdfvshjdgfuyesgtuebfhjbdfhjgertguertiueriuferhfgbhjrergrtueyuihdhjbcvbdvbjhdsgfshfiuwerjelkfjklefgkegtiueyrtioeurioejjertjhregkjrg", profileImage: #imageLiteral(resourceName: "twitter_profile"))
+        var user6 = User(name: "Test1", userName: "Test2", bioText: "qeuewydfgeghegthghsdfvshjdgfuyesgtuebfhjbdfhjgertguertiueriuferhfgbhjrergrtueyuihdhjbcvbdvbjhdsgfshfiuwerjelkfjklefgkegtiueyrtioeurioejjertjhregkjrg", profileImage: #imageLiteral(resourceName: "twitter_profile"))
+        return [user1, user2, user3, user4, user5]
+    }()
+    
+   
     override func cellClasses() -> [DatasourceCell.Type] {
         return [UserCell.self]
     }
     override func item(_ indexPath: IndexPath) -> Any? {
-        return words[indexPath.item]
+        return users[indexPath.item]
     }
     override func numberOfItems(_ section: Int) -> Int {
-        return words.count
+        return users.count
     }
     
     override func headerClasses() -> [DatasourceCell.Type]? {
