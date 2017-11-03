@@ -13,6 +13,7 @@ extension HomeDataSrouceController{
         setUpTitleView()
         setUpNavLeftBarButton()
         setUpNavRightBarButton()
+        setUpRemainingNavItems()
     }
     
     private func setUpNavRightBarButton(){
@@ -35,6 +36,11 @@ extension HomeDataSrouceController{
         followButton.frame = CGRect(x: 0, y: 0, width: 34, height: 34)
         navigationItem.leftBarButtonItem = UIBarButtonItem(customView: followButton)
         
+        let  navBarSeparator = UIView()
+        navBarSeparator.backgroundColor = UIColor(r: 230, g: 230, b: 230)
+        view.addSubview(navBarSeparator)
+        navBarSeparator.anchor(view.topAnchor, left: view.leftAnchor, bottom: nil, right: view.rightAnchor, topConstant: 0, leftConstant: 0, bottomConstant: 0, rightConstant: 0, widthConstant: 0, heightConstant: 0.5)
+        
     }
     
     private func setUpTitleView(){
@@ -42,10 +48,16 @@ extension HomeDataSrouceController{
         titleImageView.frame = CGRect(x: 0, y: 0, width: 34, height: 34)
         titleImageView.contentMode = .scaleAspectFit
         navigationItem.titleView = titleImageView
-        navigationController?.navigationBar.backgroundColor = .white
-        navigationController?.navigationBar.isTranslucent = false
+       
     }
     
+    private func setUpRemainingNavItems(){
+        
+        navigationController?.navigationBar.backgroundColor = .white
+        navigationController?.navigationBar.isTranslucent = false
+        navigationController?.navigationBar.shadowImage = UIImage()
+        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+    }
     private func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return 0
     }

@@ -19,15 +19,29 @@ class HomeDataSouce : Datasource{
         return [user1, user2, user3, user4, user5]
     }()
     
+    let tweet : [Tweets] = {
+        let tweet1 = Tweets(profileImage: #imageLiteral(resourceName: "twitter_profile"), userName: "Vasudha", tweetText: "Go vegan #govegan#plantbaseddiet#saveanimals", userID :"@abcdsdkjheirheti")
+        let tweet2 = Tweets(profileImage: #imageLiteral(resourceName: "twitter_profile"), userName: "Vasudha", tweetText: "Go vegan #govegan#plantbaseddiet#saveanimals", userID :"@abcdsdkjheirheti")
+        return [tweet1,tweet2]
+    }()
    
     override func cellClasses() -> [DatasourceCell.Type] {
-        return [UserCell.self]
+        return [UserCell.self , TweetCell.self]
     }
     override func item(_ indexPath: IndexPath) -> Any? {
+        if indexPath.section == 1{
+            return tweet[indexPath.item]
+        }
         return users[indexPath.item]
     }
     override func numberOfItems(_ section: Int) -> Int {
-        return users.count
+        switch section {
+        case 0:
+             return users.count
+        default:
+            return tweet.count
+        }
+       
     }
     
     override func headerClasses() -> [DatasourceCell.Type]? {
@@ -37,5 +51,8 @@ class HomeDataSouce : Datasource{
         return [UserFooter.self]
     }
     
+    override func numberOfSections() -> Int {
+        return 2
+    }
 }
 
