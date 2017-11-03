@@ -15,7 +15,6 @@
 		21BB61E61FA260F600971B49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21BB61E41FA260F600971B49 /* LaunchScreen.storyboard */; };
 		21BB61F11FA260F600971B49 /* TwitterExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BB61F01FA260F600971B49 /* TwitterExampleTests.swift */; };
 		21BB61FC1FA260F600971B49 /* TwitterExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BB61FB1FA260F600971B49 /* TwitterExampleUITests.swift */; };
-		21BB620A1FA2620000971B49 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BB62091FA2620000971B49 /* HomeController.swift */; };
 		21BB620E1FA2749000971B49 /* HomeDataSourceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BB620D1FA2749000971B49 /* HomeDataSourceController.swift */; };
 		21BB62131FA2802700971B49 /* UserCellHeaderAndFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BB62121FA2802700971B49 /* UserCellHeaderAndFooter.swift */; };
 		21BB62151FA2805100971B49 /* HomeDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BB62141FA2805100971B49 /* HomeDataSource.swift */; };
@@ -63,7 +62,6 @@
 		21BB61F71FA260F600971B49 /* TwitterExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwitterExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		21BB61FB1FA260F600971B49 /* TwitterExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterExampleUITests.swift; sourceTree = "<group>"; };
 		21BB61FD1FA260F600971B49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		21BB62091FA2620000971B49 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		21BB620D1FA2749000971B49 /* HomeDataSourceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDataSourceController.swift; sourceTree = "<group>"; };
 		21BB62121FA2802700971B49 /* UserCellHeaderAndFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCellHeaderAndFooter.swift; sourceTree = "<group>"; };
 		21BB62141FA2805100971B49 /* HomeDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDataSource.swift; sourceTree = "<group>"; };
@@ -143,7 +141,6 @@
 				21BB62101FA27F9700971B49 /* View */,
 				21BB62111FA27FAB00971B49 /* Controller */,
 				21BB620F1FA27F9000971B49 /* Model */,
-				21BB62091FA2620000971B49 /* HomeController.swift */,
 				21BB61DB1FA260F600971B49 /* AppDelegate.swift */,
 				21BB61E21FA260F600971B49 /* Assets.xcassets */,
 				21BB61E41FA260F600971B49 /* LaunchScreen.storyboard */,
@@ -456,7 +453,6 @@
 				215B4B7D1FA3A07400793A35 /* User.swift in Sources */,
 				21BB62131FA2802700971B49 /* UserCellHeaderAndFooter.swift in Sources */,
 				21BB61DC1FA260F600971B49 /* AppDelegate.swift in Sources */,
-				21BB620A1FA2620000971B49 /* HomeController.swift in Sources */,
 				215B4B7F1FA3A3CE00793A35 /* UserCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
